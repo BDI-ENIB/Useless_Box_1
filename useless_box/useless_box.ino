@@ -9,8 +9,7 @@
 
 Servo moteur ; //on déclare le moteur
 
-const int entree = 7 ; //interrupteur n°1
-const int sortie = 5;//interrupteur n°2
+const 
 int etat_bouton = LOW ;
 int pos_moteur = 0 ;
 
@@ -25,7 +24,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(entree, HIGH) ;
   etat_bouton = digitalRead(sortie) ;
-   pos_moteur = digitalRead(moteur) ;
+  pos_moteur = digitalRead(moteur) ;
   if (etat_bouton == LOW) {//bouton à replacer
     moteur.write(100) ; //le moteur avance de 100 degrés (angle au pif pour l'instant)
    
